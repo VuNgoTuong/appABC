@@ -1,0 +1,13 @@
+<h1 mat-dialog-title align="center">Chọn ngày</h1>
+<hr>
+<span class="date"  [class.active]="color=='y'">This year</span>
+<span class="date" [class.active]="color=='m'">This month</span>
+<span class="date"  [class.active]="color=='td'">Today</span>
+<div class="chooseDate">
+    <input placeholder="Today" class="form-control date_from" type="date" />
+    <span style="margin: auto;">-</span>
+    <input placeholder="Today" class="form-control date_to" type="date"/>
+</div>
+<div mat-dialog-actions>
+	<button mat-button class="btn btn-primary" (click)="onOKClick()">OK</button>
+</div>

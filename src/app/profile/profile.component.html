@@ -1,0 +1,57 @@
+<div class="setting">
+  <div class="header">
+    <div class="img-avatar" >
+        <div class="img-vector">
+            <a routerLink="/dash-board">
+                <img src="assets/logo/Vector.png" style="width: 14.1px;height: 24px;">
+            </a>
+        </div>
+        <img style="width: 60px; height: 60px;" src="assets/logo/DefaultAvatar.png">
+    </div>
+
+    <div class="hi-name">
+        <b class="name">{{ name }}</b>
+    </div>
+</div>
+<div class="setting-profile">
+  <div class="setting-func">
+      <div class="edit-profile width">
+          <a routerLink="edit">
+              <img src="assets/logo/ChangeInformation.png">
+              <span class="func-text">Edit profile</span>
+          </a>
+      </div>
+      <div class="change-pass width">
+          <a routerLink="change-pass">
+              <img src="assets/logo/ChangePassword.png">
+              <span class="func-text">Change Pass</span>
+          </a>
+      </div>
+      <div class="logout width">
+          <a routerLink="/auth/login">
+              <img src="assets/logo/LogOut.png">
+              <span class="func-text">Logout</span>
+          </a>
+      </div>
+
+  </div>
+</div>
+<div class="dark-mode">
+  <b class="text">Dark mode</b>
+  <label class="switch float-right">
+      <input type="checkbox"
+      (change)="toggleClick()">
+      <span class="slider round"></span>
+  </label>
+</div>
+<div class="enable-biometric">
+  <div>
+      <b>Enable sign in with Biometric</b>
+      <label class="switch float-right">
+          <input type="checkbox">
+          <span class="slider round"></span>
+      </label>
+  </div>
+</div>
+
+</div>

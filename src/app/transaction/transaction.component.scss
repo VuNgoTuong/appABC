@@ -1,0 +1,99 @@
+.header {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title {
+  height: 42px;
+  width: 90px;
+  text-align: center;
+  color: white;
+}
+
+.calendar {
+    position: absolute;
+    width: 23.47px;
+    height: 24px;
+    left: 20px;
+    top: 30px;
+    float: left;
+}
+
+.nav {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setWidth {
+  margin-right: 0px !important;
+  padding: 15px 11%;
+  color: black;
+  border-bottom: 2px solid #E0E0E0;
+  ;
+}
+
+.footer {
+  position: fixed;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: #F46F22;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-dash {
+  padding-left: 30%;
+}
+
+.img-tran {
+  padding-left: 30%;
+}
+
+.tran-text {
+  display: block;
+  color: #F46F22;
+}
+
+.setWidth {
+  width: 30%;
+  font-weight: bold;
+  margin-right: 0px !important;
+  padding: 15px 11%;
+  color: black;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+.btn-primary-add
+{
+  color: white;
+    background-color: orange;
+    font-size: 30px;
+}
+
+.btn-add{
+  font-weight:400;
+  line-height:1.25;
+  text-align:center;
+  border:1px solid transparent;
+  padding:.5rem 1rem;
+  border-radius:.25rem;
+  width: 167px;
+  height: 52px;
+}
+
+.active{
+  color: orangered;
+  padding-bottom:10px;
+  border-bottom: 5px solid #f46f22;
+}

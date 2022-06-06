@@ -1,0 +1,30 @@
+<div>
+  <div class="header">
+    <div class="title">
+        <div class="transac font-16px">Transaction</div>
+        <div>July 2022</div>
+    </div>
+    <img (click)="openCalendarDialog()" class="calendar"  src="assets/logo/icCalendar.png">
+</div>
+<div class="nav">
+  <a routerLink="/transaction/all" routerLinkActive="active" class="setWidth">All</a>
+  <a routerLink="/transaction/income" routerLinkActive="active" class="setWidth" >Income</a>
+  <a routerLink="/transaction/express" routerLinkActive="active" class="setWidth">Express</a>
+</div>
+  <router-outlet></router-outlet>
+  <div class="footer">
+    <a routerLink="/dash-board">
+        <div>
+            <img class="img-dash" src="assets/logo/normalDash.png">
+            <span class="dash-text">Dashboard</span>
+        </div>
+    </a>
+    <a>
+        <button class="btn-add btn-primary-add" type="submit" (click)="openCalendarDialog()">+</button>
+    </a>
+    <div>
+        <img class="img-tran" src="assets/logo/selectedTransac.png">
+        <span class="tran-text">Transaction</span>
+    </div>
+</div>
+</div>

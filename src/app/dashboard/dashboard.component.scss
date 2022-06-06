@@ -1,0 +1,131 @@
+.dash-board {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+.header {
+  background-color: green;
+  height: 100px;
+  color: white;
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+.profile {
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  align-items: center;
+  color: black;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  background-color: white;
+}
+
+.dashboard {
+   background-color: white;
+   border-radius: 5px;
+   align-items: center;
+}
+
+.top-dashboard {
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+.bot-dashboard {
+  padding: 10px ;
+}
+.defaultavatar {
+  left: 0;
+  float: left;
+}
+.dashboard-price {
+
+  float: left;
+  margin-left: 10px;
+}
+
+.bot-left {
+  float: left;
+  width: 45%;
+}
+
+.cale{
+  float: right;
+}
+
+.bot-right {
+  float: right;
+  width: 45%;
+}
+.price-ex {
+  color: #F46F22;
+  font-size: 20px;
+}
+.price-in {
+  color: green;
+  font-size: 20px;
+}
+.namee{
+  color: black;
+}
+.dashboard-income {
+  margin-left: 10px;
+}
+.chart {
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  align-items: center;
+}
+.footer {
+  // position: fixed;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: #F46F22;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img-dash {
+  padding-left: 30%;
+}
+
+.img-tran {
+  padding-left: 30%;
+}
+
+.dash-text {
+  display: block;
+  color: #F46F22;
+}
+.tran-text {
+  display: block;
+  color: gray;
+}
+
+.btn-primary-add
+{
+  color: white;
+    background-color: orange;
+    font-size: 30px;
+}
+
+.btn-add{
+  font-weight:400;
+  line-height:1.25;
+  text-align:center;
+  border:1px solid transparent;
+  padding:.5rem 1rem;
+  border-radius:.25rem;
+  width: 167px;
+  height: 52px;
+}

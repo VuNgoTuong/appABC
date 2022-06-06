@@ -1,0 +1,42 @@
+.form-auth{
+  background-color: white;
+  border-radius:.25rem;
+  margin: 10px;
+}
+
+.form-group
+{
+  border: 0px;
+}
+
+.input-group{
+  display: flex;
+  width: 100%;
+}
+
+.form-control{
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.btn{
+  font-weight:400;
+  line-height:1.25;
+  text-align:center;
+  border:1px solid transparent;
+  padding:.5rem 1rem;
+  border-radius:.25rem;
+  width: 167px;
+  height: 52px;
+}
+
+.btn-primary{
+  position: absolute;
+  color:#fff;
+  background-color:#F46F22;
+  border-color:#F46F22
+}

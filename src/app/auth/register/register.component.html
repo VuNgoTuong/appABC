@@ -1,0 +1,49 @@
+<form [formGroup]="registerForm" >
+  <fieldset class="form-group">
+    <label>Name</label>
+    <div class="input-group">
+        <input formControlName="name" placeholder="Enter your name" class="form-control form-control-lg"
+            type="text" />
+    </div>
+</fieldset>
+<fieldset class="form-group">
+    <label>Phone number</label>
+    <div class="input-group">
+        <input formControlName="phonenumber" placeholder="Enter your phone number"
+            class="form-control form-control-lg" type="text" />
+    </div>
+</fieldset>
+<fieldset class="form-group">
+  <label>Password</label>
+  <div class="form-group inner-addon right-addon">
+      <div class="input-group">
+          <input formControlName="password" [type]="showpassword ? 'text' : 'password'"
+              class="form-control pwd-control" id="password-field" placeholder="Enter your password">
+          <div>
+              <i alt="show" class="far fa-eye eye-show" (click)="showpassword = !showpassword"
+                  [class.hide]="showpassword"></i>
+              <i alt="hide" class="far fa-eye-slash eye-hide" (click)="showpassword = !showpassword"
+                  [class.hide]="!showpassword"></i>
+          </div>
+      </div>
+  </div>
+</fieldset>
+<fieldset class="form-group">
+    <label>Confirm password</label>
+    <div class="form-group inner-addon right-addon">
+        <div class="input-group">
+            <input formControlName="confirmpassword" [type]="showpassword ? 'text' : 'password'"
+                class="form-control pwd-control" id="password-field" placeholder="Enter your password">
+            <div>
+                <i alt="show" class="far fa-eye eye-show" (click)="showpassword = !showpassword"
+                    [class.hide]="showpassword"></i>
+                <i alt="hide" class="far fa-eye-slash eye-hide" (click)="showpassword = !showpassword"
+                    [class.hide]="!showpassword"></i>
+            </div>
+        </div>
+    </div>
+</fieldset>
+<fieldset class="form-group btn">
+    <button class="btn btn-primary" type="submit" routerLink="/auth/login" [disabled]="!registerForm.valid">Sign up </button>
+</fieldset>
+</form>

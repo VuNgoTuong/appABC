@@ -1,0 +1,29 @@
+
+<div>
+  <div class="img-vector"><a routerLink="/auth/login">
+          <img src="assets/logo/Vector.png" style="width: 14.1px;height: 24px;"></a>
+  </div>
+  <div class="img-forgot">
+      <img class="forgotp" src="assets/auth/forgotpassword.png">
+  </div>
+  <div class="form-forgot">
+      <div class="recover">
+          <span>To recover your password, you need to enter your registered phone number.
+              We will send you new password to your phone.</span>
+      </div>
+      <form [formGroup]="forgotpasswordForm">
+          <fieldset class="form-group">
+              <label style="font-size:18px; color: white;" >Phone number</label>
+              <div class="input-group">
+              <input formControlName="phonenumber" placeholder="Enter your phone number"
+                  class="form-control" type="text" /></div>
+          </fieldset>
+          <fieldset class="form-group btn">
+              <a routerLink="/new-password">
+                  <button class="btn btn-primary" type="submit" routerLink="/auth/login" [disabled]="!forgotpasswordForm.valid">Send</button>
+              </a>
+          </fieldset>
+      </form>
+  </div>
+</div>
+

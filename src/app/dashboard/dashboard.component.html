@@ -1,0 +1,65 @@
+<div class="dash-board">
+  <div class="header">
+    <img
+      src="assets/logo/DefaultAvatar.png"
+      style="height: 60px; width: 60px"/>
+    <div>
+      <b class="namee"> hello {{ name }}</b>
+    </div>
+    <div class="profile">
+      <b routerLink="/profile">My Profile</b>
+    </div>
+  </div>
+  <div class="dashboard">
+    <div class="top-dashboard">
+      <div class="defaultavatar">
+        <img
+          style="width: 50px; height: 50px"
+          src="assets/logo/wallet_normal.png"
+        />
+      </div>
+      <div class="dashboard-price">
+        <span>Balance</span>
+        <b class="price"> 500.000 đ</b>
+      </div>
+    </div>
+    <div class="bot-dashboard">
+      <div class="bot-left">
+        <img src="assets/logo/Income.png" />
+        <span style="font-size: 14px; padding-left: 10px">Income</span>
+        <div class="dashboard-income">
+          <b class="price-in"> 500.000đ</b>
+        </div>
+      </div>
+      <div class="bot-right">
+        <img src="assets/logo/Expenses.png" />
+        <span style="font-size: 14px; padding-left: 10px">Expense</span>
+        <div class="dashboard-income">
+          <b class="price-ex">0 đ</b>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chart">
+    <div class="top-tran">
+        <div class="cale">
+            <img (click)="openCalendarDialog()" src="assets/logo/icCalendar.png"  style="height: 20px; width: 20px;">
+        </div>
+        <b>Transaction chart 2022</b>
+        <img style="width: 95%;" src="assets/logo/Chart.png">
+    </div>
+</div>
+<div class="footer">
+  <div>
+      <img class="img-dash" src="assets/logo/Dashboard_Selected.png">
+      <span class="dash-text">Dashboard</span>
+  </div>
+  <button class="btn-add btn-primary-add" type="submit" (click)="openCalendarDialog()">+</button>
+  <a routerLink="/transaction/all">
+      <div class="transactionfooter">
+          <img class="img-tran" src="assets/logo/normalTransaction.png">
+          <span class="tran-text">Transaction</span>
+      </div>
+  </a>
+</div>
+</div>

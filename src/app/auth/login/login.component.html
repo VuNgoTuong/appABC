@@ -1,0 +1,53 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <fieldset class="form-group">
+    <label>Phone</label>
+    <div class="input-group">
+      <input
+        formControlName="phone"
+        placeholder="Enter your phone number"
+        class="form-control form-control-lg"
+        type="text"
+      />
+    </div>
+  </fieldset>
+
+  <fieldset class="form-group">
+    <label>Password</label>
+    <div class="form-group">
+      <div class="input-group">
+        <input
+          formControlName="password"
+          [type]="showpassword ? 'text' : 'password'"
+          class="form-control pwd-control"
+          id="password-field"
+          placeholder="Enter your password"
+        />
+        <div>
+          <i
+            alt="show"
+            class="far fa-eye eye-show"
+            (click)="showpassword = !showpassword"
+            [class.hide]="showpassword"
+          ></i>
+          <i
+            alt="hide"
+            class="far fa-eye-slash eye-hide"
+            (click)="showpassword = !showpassword"
+            [class.hide]="!showpassword"
+          ></i>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="form-group">
+    <label class="remember"> <input type="checkbox" />Remember me </label>
+    <a href="/forgot-password"
+      ><label class="forgot">Forgot password?</label></a
+    >
+  </fieldset>
+  <fieldset class="form-group btn">
+    <button class="btn btn-primary" routerLink="/dash-board" type="submit">
+      Sign in
+    </button>
+  </fieldset>
+</form>

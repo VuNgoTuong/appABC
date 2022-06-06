@@ -1,0 +1,28 @@
+.logo-spider{
+  margin:10px;
+}
+.logo-money {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.form{
+  background-color: white;
+  border-radius:.25rem;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.form-login-register{
+    display:flex;
+    margin: auto;
+    background-color:green;
+    font-weight:bold  ;
+    justify-content: space-around;
+}
+
+.active{
+  color: orangered;
+  padding-bottom:10px;
+  border-bottom: 5px solid #f46f22;
+}
